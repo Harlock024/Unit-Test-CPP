@@ -62,4 +62,4 @@ $ g++ -o test math_functions_test.cpp -lgtest -lpthread
 ```bash
 $ ./test
 ```
-# go0d LUcK
+*go0d LUcK*
