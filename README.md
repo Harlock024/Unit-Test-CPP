@@ -1,13 +1,13 @@
 # Unit testing  on c++
 
+
 ## Description
 This is a simple example of how to use the Google Test framework to test a simple c++ program.
 The program is a simple calculator that can add, subtract. The program is tested using the Google Test framework.
 The tests are written in the math_functions_test.cpp file.
 
 
-1. [Installation](#Installation)
-
+1. Installation
 ```bash
 git clone https://github.com/google/googletest.git
 cd googletest
@@ -18,14 +18,13 @@ make
 sudo cp lib/*.a /usr/lib
 ```
 
-2. [Create Project](#CreateProject)
+2. Create Project
 ```bash
 mkdir gtest_exaple
 cd gtest_exaple
-
 ```
-3. [Testing](#Testing)
-    - 3.1 [Create the math_functions.cpp file](#Testing)
+3. Testing
+    - 3.1 Create the math_functions.cpp file
       ```c++
       int add(int a, int b) {
           return a + b;
@@ -34,7 +33,7 @@ cd gtest_exaple
           return a - b;
       }
       ```
-     - 3.2
+    - 3.2 Create the math_funtions_test.cpp
         ```c++
         // math_functions_test.cpp
         // tests to the function add
@@ -52,13 +51,13 @@ cd gtest_exaple
             return RUN_ALL_TESTS();
         }
         ```
-4. [Compilate the test](#Run)
+4. Compilate the test
 ```bash
 $ g++ -o test math_functions_test.cpp -lgtest -lpthread
 
 ```
 
-5. [Run the test](#Run)
+5. Run the test
 ```bash
 $ ./test
 ```
